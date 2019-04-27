@@ -10,7 +10,7 @@ import datetime
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 
-fn='D:\TCRI\data/20171107_TALIM.txt'
+fn='../data/20171107_TALIM.txt'
 f=open(fn, "r")
 lines=f.readlines()
 toa=[] #time of analysis
@@ -47,4 +47,4 @@ plt.gca().invert_yaxis() #reverse y-axis
 #tell matplotlib to use the format specified above
 ax.xaxis.set_major_formatter(myFmt); 
 
-plt.savefig('D:\TCRI\plt/cp_'+fn[13:]+'.png', dpi=300)
+plt.savefig('../plt/cp_'+fn[8:]+'.png', dpi=300)

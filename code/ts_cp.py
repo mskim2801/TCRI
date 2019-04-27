@@ -10,7 +10,7 @@ import datetime
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 
-fn='D:\TCRI\data/20171107_TALIM.txt'
+fn='../data/20171107_TALIM.txt'
 f=open(fn, "r")
 lines=f.readlines()
 toa=[] #time of analysis
@@ -56,6 +56,4 @@ ax2.xaxis.set_major_formatter(myFmt);
 
 
 plt.tight_layout()
-plt.savefig('D:\TCRI\plt/'+fn[13:]+'.png', dpi=300)
-
-
+plt.savefig('./../plt/'+fn[8:]+'.png', dpi=300)
